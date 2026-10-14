@@ -1,0 +1,105 @@
+/*
+filename: layout.css
+author: thanh-chuong-trinh
+created: 14/10/2026
+last modified: 14/10/2026
+description: Layout styles for lab05.html (used together with lab04.css and dl.css)
+*/
+
+/* Restore default behaviour overridden in lab04.css */
+aside:hover {
+  display: block;
+}
+
+/* Menu */
+.menu {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Aside: box model, size and position */
+aside {
+  border: 3px solid purple;
+  border-radius: 0.8em;
+  margin: 1em;
+  padding: 1em;
+  background: url(images/fade.jpg) repeat-x;
+  width: 30%;
+  float: right;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* Header */
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  border-top: 4px double #800080;
+  clear: both;
+}
+
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+
+footer p:first-child {
+  float: left;
+}
+
+footer p:nth-child(2) {
+  text-align: center;
+}
+
+footer p:last-child {
+  float: right;
+  text-align: right;
+}
+
+/* Two-column section layout */
+#lists {
+  float: left;
+}
+
+#tables {
+  float: right;
+}
+
+#hyperlinks {
+  clear: both;
+  float: left;
+}
+
+#images {
+  float: right;
+}
+
+#lists, #tables, #hyperlinks, #images {
+  width: 50%;
+  text-align: center;
+}
+
+ol, ul, dl {
+  text-align: left;
+}
+
+table {
+  margin: auto;
+}
+
+figure {
+  border: 2px solid #ccc;
+}
+
+article {
+  min-width: 30em;
+}
